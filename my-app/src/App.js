@@ -61,7 +61,7 @@ const Add = () => {
                         </FormControl>
                     </>
                 ) : (
-                    <h2>Thank you for your service!</h2>
+                    <h2>Thank you for using our service!</h2>
                 )}
 
                 {/* Add Details Modal */}
