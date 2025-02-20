@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Add = () => {
     const [messages, setMessages] = useState([
         "Hello! I'm your employee record assistant. How can I help you?",
-        "Enter your command (add, search, display, exit):"
+        "Enter your command (Add Details, Search Details, Display, Exit):"
     ]);
     const [showCommandPrompt, setShowCommandPrompt] = useState(true);
     const [input, setInput] = useState("");
@@ -17,14 +17,14 @@ const Add = () => {
     }, [employees]);
 
     const handleCommand = () => {
-        const command = input.trim().toLowerCase();
+        const command = input;
         setDisplayContent(null); // Reset previous JSX display
         let newMessages = [
             "Hello! I'm your employee record assistant. How can I help you?",
-            "Enter your command (add, search, display, exit):"
+            "Enter your command (Add Details, Search Details, Display, Exit):"
         ];
 
-        if (command === "add") {
+        if (command === "Add Details") {
             const id = prompt("Enter Employee ID:");
             const name = prompt("Enter Employee Name:");
             const doj = prompt("Enter Date of Joining:");
@@ -41,11 +41,11 @@ const Add = () => {
             setTimeout(() => {
                 setMessages([
                     "Hello! I'm your employee record assistant. How can I help you?",
-                    "Enter your command (add, search, display, exit):"
+                    "Enter your command (Add Details, Search Details, Display, Exit):"
                 ]);
             }, 2000);
             return;
-        } else if (command === "search") {
+        } else if (command === "Search Details") {
             const searchId = prompt("Enter Employee ID to search:");
             const employee = employees.find(emp => emp.id === searchId);
             if (employee) {
@@ -64,7 +64,7 @@ const Add = () => {
             } else {
                 newMessages.push("Employee not found");
             }
-        } else if (command === "display") {
+        } else if (command === "Display") {
             if (employees.length) {
                 setDisplayContent(
                     <table className="table-auto w-full border-collapse border border-gray-400 mt-4">
@@ -97,7 +97,7 @@ const Add = () => {
             } else {
                 newMessages.push("No employee records available.");
             }
-        } else if (command === "exit") {
+        } else if (command === "Exit") {
             newMessages = ["Goodbye!"];
             setShowCommandPrompt(false);
         } else {
@@ -108,7 +108,7 @@ const Add = () => {
     };
 
     return (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", backgroundColor: "wheat" }}>
             <div className="p-4 max-w-lg mx-auto bg-gray-100 shadow-md rounded-lg text-center">
                 <div className="h-80 overflow-y-auto bg-white p-4 rounded-lg shadow-inner">
                     {messages.map((msg, index) => (
@@ -117,7 +117,7 @@ const Add = () => {
                     {displayContent && <div className="mt-4">{displayContent}</div>}
                 </div>
                 {showCommandPrompt && (
-                    <div className="mt-4 flex">
+                    <div>
                         <input
                             type="text"
                             className="border p-2 flex-grow rounded-l-lg"
