@@ -44,7 +44,7 @@ const Add = () => {
     };
 
     return (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", backgroundColor: "00bcd4" }}>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", backgroundColor: "#00bcd4" }}>
             <Stack>
                 {showCommandPrompt ? (
                     <>
