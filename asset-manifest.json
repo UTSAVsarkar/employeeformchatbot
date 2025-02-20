@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/employeeformchatbot/static/css/main.f855e6bc.css",
+    "main.js": "/employeeformchatbot/static/js/main.da72a6bb.js",
+    "static/js/453.ed3810f9.chunk.js": "/employeeformchatbot/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/employeeformchatbot/index.html",
+    "main.f855e6bc.css.map": "/employeeformchatbot/static/css/main.f855e6bc.css.map",
+    "main.da72a6bb.js.map": "/employeeformchatbot/static/js/main.da72a6bb.js.map",
+    "453.ed3810f9.chunk.js.map": "/employeeformchatbot/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.da72a6bb.js"
+  ]
+}
