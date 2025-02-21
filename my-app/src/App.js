@@ -54,7 +54,7 @@ const App = () => {
             <motion.div
                 initial={{opacity: 0, scale: 0.5}}
                 animate={{opacity: 1, scale: 1}}
-                transition={{duration: 0.5, ease: "easeOut"}}
+                transition={{duration: 1.2, ease: "easeOut"}}
             >
                 <Card sx={{width: 400, padding: 3, borderRadius: 4, boxShadow: 6, backgroundColor: "#ffffff"}}>
                     <CardContent>
