@@ -70,12 +70,12 @@ const App = () => {
                                         textTransform: "uppercase",
                                         letterSpacing: 2,
                                         padding: "10px",
-                                        backgroundColor: "#f5f5f5",
+                                        backgroundColor: "#dcdcdc",
                                         borderRadius: "8px",
                                         boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.1)"
                                     }}
                                 >
-                                    HRBot
+                                    HR-Bot
                                 </Typography>
 
                                 <Typography variant="h6" fontWeight="bold" color="primary" textAlign="center"
